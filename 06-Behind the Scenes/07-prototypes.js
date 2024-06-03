@@ -22,3 +22,18 @@ String.prototype.trueLength = function () {
 
 console.log(myName.length);
 console.log(myName.trueLength());
+
+// Inheritance
+const user = {
+  username: "Prince",
+  password: "123",
+};
+
+const instaUser = {
+  instaId: "prince_saliya",
+  __proto__: user,
+};
+
+// Object.setPrototypeOf(instaUser,user);
+
+console.log(instaUser.username);
